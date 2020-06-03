@@ -119,10 +119,6 @@
     </form>
 
     @livewireScripts
-    <script>
-        window.livewire.on('focus-search', (data) => {
-            document.getElementById(`${data.name}`).focus();
-        });
-    </script>
+    @livewireSelectScripts
 </body>
 </html>
