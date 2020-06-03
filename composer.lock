@@ -4,20 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bfa16db0e593eed4494510febf4a6fe",
+    "content-hash": "cf4042c7f391c6fa297577ad92d5c1f6",
     "packages": [
         {
             "name": "asantibanez/livewire-select",
-            "version": "dev-master",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asantibanez/livewire-select.git",
+                "reference": "04d19295ed1a54bf025141996bfbe139a4d47e6d"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../packages/livewire-select",
-                "reference": "f0a0a5628678b027789b928d0a96b1558fdf0202"
+                "type": "zip",
+                "url": "https://api.github.com/repos/asantibanez/livewire-select/zipball/04d19295ed1a54bf025141996bfbe139a4d47e6d",
+                "reference": "04d19295ed1a54bf025141996bfbe139a4d47e6d",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0|^7.0",
                 "livewire/livewire": "^1.1",
-                "php": "^7.1"
+                "php": "^7.1",
+                "spatie/macroable": "^1.0"
             },
             "require-dev": {
                 "orchestra/testbench": "^4.0",
@@ -39,19 +46,7 @@
                     "Asantibanez\\LivewireSelect\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Asantibanez\\LivewireSelect\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -67,7 +62,8 @@
             "keywords": [
                 "asantibanez",
                 "livewire-select"
-            ]
+            ],
+            "time": "2020-06-03T22:51:19+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2116,6 +2112,52 @@
                 }
             ],
             "time": "2020-03-29T20:13:32+00:00"
+        },
+        {
+            "name": "spatie/macroable",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/macroable.git",
+                "reference": "74b0d189ce75142f1706aad834d5a428dfc7c3c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/macroable/zipball/74b0d189ce75142f1706aad834d5a428dfc7c3c3",
+                "reference": "74b0d189ce75142f1706aad834d5a428dfc7c3c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Macroable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A trait to dynamically add methods to a class",
+            "homepage": "https://github.com/spatie/macroable",
+            "keywords": [
+                "macroable",
+                "spatie"
+            ],
+            "time": "2017-09-18T09:51:20+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6624,9 +6666,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "asantibanez/livewire-select": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
