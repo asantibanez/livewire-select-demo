@@ -83,7 +83,7 @@ class DatabaseSeeder extends Seeder
                     collect($brands[$brand])->each(function ($model) use ($carBrand) {
                         CarModel::create([
                             'name' => $model,
-                            'car_brand_id' => $carBrand
+                            'car_brand_id' => $carBrand->id,
                         ]);
                     });
                 });
