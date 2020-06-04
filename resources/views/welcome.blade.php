@@ -94,7 +94,7 @@
                 <div class="mt-2">
                     <livewire:car-model-select
                         name="car_model_id"
-                        placeholder="Choose a City"
+                        placeholder="Choose a Model"
                         :value="request('car_model_id')"
                         :depends-on="['car_brand_id']"
                         :depends-on-values="['car_brand_id' => request('car_brand_id')]"
