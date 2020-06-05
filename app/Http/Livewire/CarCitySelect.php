@@ -24,10 +24,10 @@ class CarCitySelect extends LivewireSelect
             });
     }
 
-    public function selectedOption($value)
+    public function selectedOption($value = null)
     {
         $carCity = CarCity::find($value);
 
-        return ['title' => $carCity->name];
+        return ['title' => optional($carCity)->name];
     }
 }

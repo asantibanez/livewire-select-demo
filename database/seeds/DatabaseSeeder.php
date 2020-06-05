@@ -72,7 +72,7 @@ class DatabaseSeeder extends Seeder
 
         CarCity::all()
             ->each(function (CarCity $carCity) use ($brands) {
-                $randomBrands = collect(array_rand($brands, 3));
+                $randomBrands = collect(array_rand($brands, 5));
 
                 $randomBrands->each(function ($brand) use ($carCity, $brands) {
                     $carBrand = CarBrand::create([

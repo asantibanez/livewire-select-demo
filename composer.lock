@@ -4,15 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bfa16db0e593eed4494510febf4a6fe",
+    "content-hash": "479aa37db5672cff2f6b7ba351df8659",
     "packages": [
         {
             "name": "asantibanez/livewire-select",
-            "version": "dev-master",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asantibanez/livewire-select.git",
+                "reference": "61e17a1f277cf742dc1091f66348d3dc3de62deb"
+            },
             "dist": {
-                "type": "path",
-                "url": "../../packages/livewire-select",
-                "reference": "02391795a7d711490bf6ed964f3dee67958f5856"
+                "type": "zip",
+                "url": "https://api.github.com/repos/asantibanez/livewire-select/zipball/61e17a1f277cf742dc1091f66348d3dc3de62deb",
+                "reference": "61e17a1f277cf742dc1091f66348d3dc3de62deb",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "^6.0|^7.0",
@@ -39,19 +45,7 @@
                     "Asantibanez\\LivewireSelect\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Asantibanez\\LivewireSelect\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -67,7 +61,8 @@
             "keywords": [
                 "asantibanez",
                 "livewire-select"
-            ]
+            ],
+            "time": "2020-06-05T22:45:40+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -6624,9 +6619,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "asantibanez/livewire-select": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

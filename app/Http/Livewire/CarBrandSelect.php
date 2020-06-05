@@ -14,6 +14,9 @@ class CarBrandSelect extends LivewireSelect
             ->when($this->hasDependency('car_city_id'), function ($query) {
                 $query->where('car_city_id', $this->getDependingValue('car_city_id'));
             })
+            ->when($searchTerm, function ($query, $searchTerm) {
+                $query->where('name', 'like', "%$searchTerm%");
+            })
             ->get()
             ->map(function (CarBrand $carBrand) {
                 return [
@@ -23,16 +26,12 @@ class CarBrandSelect extends LivewireSelect
             });
     }
 
-    public function selectedOption($value = null)
+    public function selectedOption($value)
     {
-        if ($value == null) {
-            return null;
-        }
-
         $carBrand = CarBrand::find($value);
 
         return [
-            'title' => $carBrand->name,
+            'title' => optional($carBrand)->name,
         ];
     }
 }
