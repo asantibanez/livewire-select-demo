@@ -9,8 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "asantibanez/livewire-select": "dev-master",
         "fideloper/proxy": "^4.2",
-        "asantibanez/livewire-select": "^1.1.0",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
@@ -61,5 +61,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../packages/livewire-select"
+        }
+    ]
 }

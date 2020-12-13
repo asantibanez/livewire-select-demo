@@ -28,6 +28,9 @@ class CarCitySelect extends LivewireSelect
     {
         $carCity = CarCity::find($value);
 
-        return ['title' => optional($carCity)->name];
+        return [
+            'value' => optional($carCity)->id,
+            'description' => optional($carCity)->name
+        ];
     }
 }

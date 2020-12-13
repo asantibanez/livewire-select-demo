@@ -4,21 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "479aa37db5672cff2f6b7ba351df8659",
+    "content-hash": "3bfa16db0e593eed4494510febf4a6fe",
     "packages": [
         {
             "name": "asantibanez/livewire-select",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asantibanez/livewire-select.git",
-                "reference": "61e17a1f277cf742dc1091f66348d3dc3de62deb"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/asantibanez/livewire-select/zipball/61e17a1f277cf742dc1091f66348d3dc3de62deb",
-                "reference": "61e17a1f277cf742dc1091f66348d3dc3de62deb",
-                "shasum": ""
+                "type": "path",
+                "url": "../../packages/livewire-select",
+                "reference": "61e17a1f277cf742dc1091f66348d3dc3de62deb"
             },
             "require": {
                 "illuminate/support": "^6.0|^7.0",
@@ -45,7 +39,19 @@
                     "Asantibanez\\LivewireSelect\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "Asantibanez\\LivewireSelect\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit"
+                ],
+                "test-coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -61,8 +67,7 @@
             "keywords": [
                 "asantibanez",
                 "livewire-select"
-            ],
-            "time": "2020-06-05T22:45:40+00:00"
+            ]
         },
         {
             "name": "asm89/stack-cors",
@@ -799,16 +804,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.14.1",
+            "version": "v7.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "469b7719a8dca40841a74f59f2e9f30f01d3a106"
+                "reference": "739c44a3f7041430a3fb357f2dcfdb78f55005d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/469b7719a8dca40841a74f59f2e9f30f01d3a106",
-                "reference": "469b7719a8dca40841a74f59f2e9f30f01d3a106",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/739c44a3f7041430a3fb357f2dcfdb78f55005d7",
+                "reference": "739c44a3f7041430a3fb357f2dcfdb78f55005d7",
                 "shasum": ""
             },
             "require": {
@@ -951,7 +956,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-06-02T22:34:18+00:00"
+            "time": "2020-06-09T14:00:25+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1209,22 +1214,22 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "ee22192220ca7b4f50dec2b0b6ea4da9e49ccf11"
+                "reference": "874ba1b8d6b12efa472147697942fe2f78a5d371"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/ee22192220ca7b4f50dec2b0b6ea4da9e49ccf11",
-                "reference": "ee22192220ca7b4f50dec2b0b6ea4da9e49ccf11",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/874ba1b8d6b12efa472147697942fe2f78a5d371",
+                "reference": "874ba1b8d6b12efa472147697942fe2f78a5d371",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
-                "illuminate/validation": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
+                "illuminate/database": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
+                "illuminate/support": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
+                "illuminate/validation": "~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0|^8.0",
                 "php": "^7.1.3",
                 "symfony/http-kernel": "^4.0|^5.0"
             },
@@ -1268,7 +1273,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-05-13T15:22:11+00:00"
+            "time": "2020-06-08T15:12:38+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1498,16 +1503,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca"
+                "reference": "1d0deef692f66dae5d70663caee2867d0971306b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
-                "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
+                "url": "https://api.github.com/repos/opis/closure/zipball/1d0deef692f66dae5d70663caee2867d0971306b",
+                "reference": "1d0deef692f66dae5d70663caee2867d0971306b",
                 "shasum": ""
             },
             "require": {
@@ -1555,20 +1560,20 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-05-25T09:32:45+00:00"
+            "time": "2020-06-07T11:41:29+00:00"
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.3",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
+                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
-                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
+                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
                 "shasum": ""
             },
             "require": {
@@ -1610,7 +1615,17 @@
                 "php",
                 "type"
             ],
-            "time": "2020-03-21T18:07:53+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-07T10:40:07+00:00"
         },
         {
             "name": "psr/container",
@@ -4230,28 +4245,28 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.6",
+            "version": "v4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6"
+                "reference": "db63b2ea280fdcf13c4ca392121b0b2450b51193"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/0b32505d67c1abbfa829283c86bfc0642a661bf6",
-                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/db63b2ea280fdcf13c4ca392121b0b2450b51193",
+                "reference": "db63b2ea280fdcf13c4ca392121b0b2450b51193",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0 || ^8.0",
-                "phpoption/phpoption": "^1.7.2",
-                "symfony/polyfill-ctype": "^1.9"
+                "phpoption/phpoption": "^1.7.3",
+                "symfony/polyfill-ctype": "^1.16"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.3",
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -4300,7 +4315,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T09:43:32+00:00"
+            "time": "2020-06-07T18:25:35+00:00"
         },
         {
             "name": "voku/portable-ascii",
@@ -4576,16 +4591,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "5261c488a1e8a7c3ebdf6a4037c34f5ddeb33922"
+                "reference": "e6bedc1e74507d584fbcb041ebe0f7f215109cf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/5261c488a1e8a7c3ebdf6a4037c34f5ddeb33922",
-                "reference": "5261c488a1e8a7c3ebdf6a4037c34f5ddeb33922",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/e6bedc1e74507d584fbcb041ebe0f7f215109cf2",
+                "reference": "e6bedc1e74507d584fbcb041ebe0f7f215109cf2",
                 "shasum": ""
             },
             "require": {
@@ -4643,7 +4658,7 @@
                 "laravel",
                 "page"
             ],
-            "time": "2020-06-01T09:04:48+00:00"
+            "time": "2020-06-08T09:14:08+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -6619,7 +6634,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "asantibanez/livewire-select": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
